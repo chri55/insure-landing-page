@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Insure landing page</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+<link href="https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="main">
+    <nav class="nav">
+      <img src="./images/logo.svg" alt="Insure Logo">
+      <img 
+        onclick="toggleMenu();"
+        src="./images/icon-hamburger.svg" 
+        alt="Open Menu" 
+        class="menu-button mobile" 
+      >
+      <img 
+        onclick="toggleMenu();"
+        src="./images/icon-close.svg" 
+        alt="Close Menu" 
+        class="menu-button mobile disabled"
+      >
+      <div class="header-links" id="header-links-menu">
+        <a href="#">How We Work</a>
+        <a href="#">Blog</a>
+        <a href="#">Account</a>
+        <div class="call-to-action">View Plans</div>
+      </div>
+    </nav>
+    <div class="hero">
+      <div class="hero-img mobile">
+        <img src="./images/image-intro-mobile.jpg" alt="Insure">
+      </div>
+
+      <div class="intro paragraph inverted">
+        <div class="spacer white">
+          <hr>
+        </div>
+        <h2 class="tagline">Humanizing</h2>
+        <h2 class="tagline">your insurance.</h2>
+
+        <p class="sub-tagline">
+          Get your life insurance coverage easier and faster. We blend our expertise 
+          and technology to help you find the plan that’s right for you. Ensure you 
+          and your loved ones are protected.
+        </p>
+        <div class="call-to-action">View Plans</div>
+      </div>
+      <div class="hero-img desktop">
+        <img src="./images/image-intro-desktop.jpg" alt="Insure">
+      </div>
+    </div>
+    <div class="benefits">
+      <div class="paragraph">
+        <div class="spacer">
+          <hr>
+        </div>
+        <h3 class="tagline">We're different</h3>
+        <div class="reasons">
+          <div class="reason">
+            <img src="./images/icon-snappy-process.svg" alt="Lightning Bolt">
+            <h4 class="tagline small">Snappy Process</h4>
+            <p class="sub-tagline small">
+              Our application process can be completed in minutes, not hours. Don’t get 
+              stuck filling in tedious forms.
+            </p>
+          </div>
+          <div class="reason">
+            <img src="./images/icon-affordable-prices.svg" alt="Dollar Sign">
+            <h4 class="tagline small">Affordable Prices</h4>
+            <p class="sub-tagline small">
+              We don’t want you worrying about high monthly costs. Our prices may be low, 
+              but we still offer the best coverage possible.
+            </p>
+          </div>
+          <div class="reason">
+            <img src="./images/icon-people-first.svg" alt="Person Icon">
+            <h4 class="tagline small">People First</h4>
+            <p class="sub-tagline small">
+              Our plans aren’t full of conditions and clauses to prevent payouts. We make 
+              sure you’re covered when you need it.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="findout inverted">
+      <div class="findout-inner">
+        <div class="paragraph">
+          <h3 class="tagline">Find out more</h3>
+          <h3 class="tagline">about how we work</h3>
+        </div>
+        <div class="call-to-action">How we work</div>
+      </div>
+    </div>
+    <div class="footer">
+      <div class="footer-section upper">
+        <img src="./images/logo.svg" alt="Insure">
+        <div class="media-links">
+          <img src="./images/icon-facebook.svg" alt="Facebook Logo">
+          <img src="./images/icon-twitter.svg" alt="Twitter Logo">
+          <img src="./images/icon-pinterest.svg" alt="Pinterest Logo">
+          <img src="./images/icon-instagram.svg" alt="Instagram">
+        </div>
+      </div>
+      <div class="spacer grey">
+        <hr>
+      </div>
+      <div class="footer-cols">
+        <div class="footer-col">
+          <h5>Our Company</h5>
+          <a href="#">How we work</a>
+          <a href="#">Why Insure?</a>
+          <a href="#">View Plans</a>
+          <a href="#">Reviews</a>
+        </div>
+        <div class="footer-col">
+          <h5>Help me</h5>
+          <a href="#">FAQ</a>
+          <a href="#">Terms of Use</a>
+          <a href="#">Privacy Policy</a>
+          <a href="#">Cookies</a>
+        </div>
+        <div class="footer-col">
+          <h5>Contact</h5>
+          <a href="#">Sales</a>
+          <a href="#">Support</a>
+          <a href="#">Live Chat</a>
+        </div>
+        <div class="footer-col">
+          <h5>Others</h5>
+          <a href="#">Careers</a>
+          <a href="#">Press</a>
+          <a href="#">Licenses</a>
+        </div>
+      </div>
+      <div class="attribution">
+        Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+        Coded by <a href="https://christill.net">Chris Till</a>.
+      </div>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
